@@ -1,0 +1,45 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>com.prompt.horizon.prompt-horizon</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/best-practices-for-listing.html#plugin-name -->
+    <name>Prompt Horizon</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor url="https://github.com/isaquemsf">Seu Nome ou Nick</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/best-practices-for-listing.html#plugin-description -->
+    <description><![CDATA[
+      Gera prompts otimizados para IAs externas usando uma IA local para análise de contexto.<br>
+      <em>Selecione os arquivos, clique com o botão direito e escolha 'Enviar para IA (Prompt Horizon)'.</em>
+    ]]></description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <actions>
+        <action id="PromptHorizon.SendAction"
+                class="com.prompt.horizon.prompthorizon.SendToLocalAiAction"
+                text="Enviar para IA (Prompt Horizon)"
+                description="Envia os arquivos selecionados para análise no servidor de IA local.">
+
+            <!-- Onde a ação vai aparecer? -->
+            <!-- Menu de clique direito no editor de código -->
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+
+            <!-- Menu de clique direito na árvore de arquivos -->
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="first"/>
+
+        </action>
+    </actions>
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+
+    </extensions>
+</idea-plugin>
