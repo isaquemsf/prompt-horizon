@@ -52,7 +52,7 @@ Siga estes passos para ter o Prompt Horizon funcionando em sua máquina.
 
 #### Opção A: Baixar o `.zip` (Releases)
 
-1.  Aperte aqui [prompt-horizon-1.0-SNAPSHOT.zip](https://github.com/isaquemsf/prompt-horizon/blob/main/prompt-horizon-1.0-SNAPSHOT.zip) e selecione "View raw".
+1.  Aperte aqui [prompt-horizon-1.0-SNAPSHOT.zip](https://github.com/isaquemsf/prompt-horizon/releases).
 2.  Baixe o arquivo `prompt-horizon-x.x.x.zip` .
 3.  Abra o IntelliJ IDEA.
 4.  Vá para `File` -> `Settings` -> `Plugins`.
